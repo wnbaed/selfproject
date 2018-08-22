@@ -112,7 +112,7 @@ class CourseVideo(LoginRequiredMixin,View):
                        'relate_courses':relate_courses,
                        })
 
-# 课程评论区
+# 课程评论区1
 class CourseComment2(LoginRequiredMixin,View):
     def get(self,request,course_id):
         course_comment = Course.objects.get(id=int(course_id))
@@ -124,7 +124,7 @@ class CourseComment2(LoginRequiredMixin,View):
                        'comments': comments,
                         })
 
-# 添加评论功能
+# 添加评论功能1
 class AddComment(View):
     def post(self,request):
         # 先监测是否登录
